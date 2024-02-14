@@ -7,6 +7,11 @@ INSERT INTO accounts (
     $1, $2, $3
   ) RETURNING *;
 
+-- name: GetAccountForUpdate :one
+SELECT * FROM accounts 
+WHERE id = $1 LIMIT 1
+For NO KEY Update;
+
 -- name: GetAccount :one
 SELECT * FROM accounts 
 WHERE id = $1 LIMIT 1;
