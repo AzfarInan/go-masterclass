@@ -3,6 +3,7 @@ module github.com/AzfarInan/go-masterclass/simplebank
 go 1.21.7
 
 require (
+	github.com/aead/chacha20poly1305 v0.0.0-20170617001512-233f39982aeb
 	github.com/gin-gonic/gin v1.9.1
 	github.com/go-playground/validator/v10 v10.18.0
 	github.com/golang-jwt/jwt v3.2.2+incompatible
@@ -17,7 +18,6 @@ require (
 
 require (
 	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
-	github.com/aead/chacha20poly1305 v0.0.0-20170617001512-233f39982aeb // indirect
 	github.com/aead/poly1305 v0.0.0-20180717145839-3fee0db0b635 // indirect
 	github.com/bytedance/sonic v1.10.2 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
